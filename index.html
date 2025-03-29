@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+
+        <div id="game-container">
+
+            <h1>Blackjack</h1>
+
+            <div id="line"></div>
+
+            <p id="message-el">Want to play a round?</p>
+            
+            <div id="ace-container">
+                <p id="ace-container-text">Choose the value of the Ace:</p>
+
+                <div id="pick-number-btn-container">
+                    <button id="pick-one" class="pick-one-or-eleven-btns" onclick="pickedNumberOne()">1</button>
+                    <button id="pick-eleven" class="pick-one-or-eleven-btns" onclick="pickedNumberEleven()">11</button>
+                </div>
+            </div>
+    
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+
+            <button id="start-game-btn" onclick="startGame()">START GAME</button>
+            <button id="new-card-btn" onclick="newCard()">NEW CARD</button>
+
+            <div>
+                <button id="double-bet-btn" onclick="doubleBet()">DOUBLE BET</button>
+            </div>
+
+            <p id="player-el"></p>
+
+            <p id="copyright-info">© 2025 <a href="https://www.linkedin.com/in/anton-antonov-589791326/" target="_blank" id="linked-in-profile-text">Anton Antonov</a> | Designed & Developed with love.</p>
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+    
+</html>
